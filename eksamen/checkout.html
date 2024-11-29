@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
+    <link href="ikoner/css/brands.css" rel="stylesheet" />
+    <link href="ikoner/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nettbutikk / Kasse</title>
+</head>
+<body>
+    <div id="grid-container">
+        <header id="global-header">
+            <nav class="flex-space-b">
+                <form>
+                    <label>Søk</label>
+                    <input type="search" placeholder="Søk her" id="search">
+                    <input type="submit" value="" class="fa-solid fa-magnifying-glass">
+                </form>
+                <img src="img/nike-logo.png" alt="Nettsted logo" id="main-logo">
+                <ul class="flex-menu" id="menu">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="index.html#popular-products">Produkter</a></li>
+                    <li><a href="index.html#kategorier">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a class="fa-regular fa-user" href="#"></a></li>
+                    <li><a class="fa-regular fa-heart" href="#"></a></li>
+                    <li><a class="fa-solid fa-cart-shopping" href="#"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h3>Kasse</h3>
+            <section class="flex-space-b">
+                <h2>1. Shoppingbagen din</h2>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/tracksuit.png">
+                        <img src="img/tracksuit.png" alt="Tracksuit">
+                    </picture>
+                    <h5>Product name</h5>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/tracksuit.png">
+                        <img src="img/tracksuit.png" alt="Tracksuit">
+                    </picture>
+                    <h5>Product name</h5>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/tracksuit.png">
+                        <img src="img/tracksuit.png" alt="Tracksuit">
+                    </picture>
+                    <h5>Product name</h5>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                </article>
+            </section>
+            <h3>2. Dine opplysninger</h3>
+            <section>
+                <h5>Leveringsadresse</h5>
+                <form class="adress-form">
+                    <input type="text" name="fornavn" placeholder="Fornavn*" required>
+                    <input type="text" name="etternavn" placeholder="Etternavn*" required>
+                    <input type="text" name="gateadresse" placeholder="Gateadresse*" required>
+                    <input type="number" name="postnummer" placeholder="Postnummer*" required>
+                    <input type="text" name="poststed" placeholder="Poststed*" required>
+                    <input type="submit" class="button-save" value="Lagre">
+                    <input type="reset" class="button-cancel" value="Avbryt">
+                </form>
+            </section>
+            <h3>3. Levering</h3>
+            <section class="radio-buttons">
+                <h5>Leveringsvalg</h5>
+                <label>
+                    Express Hjemlevering
+                    <input type="radio" name="delivery-choice">
+                </label>
+                <label>
+                    Express Pakke til utleveringssted
+                    <input type="radio" name="delivery-choice">
+                </label>
+                <label>
+                    Standard Hjemlevering
+                    <input type="radio" name="delivery-choice">
+                </label>
+            </section>
+            <h3>4. Betaling</h3>
+            <section>
+                <h5>Betal med kort</h5>
+                <form class="payment-form">
+                    <input type="number" name="kortnummer" placeholder="241254****6523" required>
+                    <input type="date" name="utlopsdata" required>
+                    <input type="number" name="cvc" placeholder="CVC/CCV">
+                    <p>Å betale inlk. mva.</p>
+                    <p>1 600 kr</p>
+                    <input type="submit" class="button-save" value="Fullfør kjøp">
+
+                    <p>Du bekrefter herved at opplysningene og dokumentene du har
+                        oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                        retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                        uriktige eller ufullstendige opplysninger.</p>
+
+                        <label for="nyhetsbrev">Ja takk send nyhetsbrev til meg.</label>
+                        <input type="checkbox" id="nyhetsbrev">
+                        
+                        <label for="tilbud">Jeg ønsker å motta teksmeldinger med tilbud og nyheter.</label>
+                        <input type="checkbox" id="tilbud">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <img src="img/nike-logo.png" alt="Nettsted logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h6>KONTAKT</h6>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Adresse: B R A Veien 4, 1757 Halden</p>
+            <i class="fa-solid fa-phone"></i>
+            <p>Telefon: 69 60 80 00</p>
+            <i class="fa-solid fa-envelope"></i>
+            <p>E-post: halden@hiof.no</p>
+            <i class="fa-solid fa-clock"></i>
+            <p>Åpningstider: Stenger 15:00</p>
+            <h6>SNARVEIER</h6>
+            <ul class="flex-menu">
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Kategorier</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+            </ul>
+            <h6>SOSIALE MEDIER</h6>
+            <i class="fa-brands fa-instagram"></i>
+            <p>Instagram</p>
+            <i class="fa-brands fa-facebook"></i>
+            <p>Facebook</p>
+            <i class="fa-brands fa-linkedin"></i>
+            <p>LinkedIn</p>
+            <i class="fa-brands fa-pinterest"></i>
+            <p>Pinterest</p>
+        </footer>
+    </div>
+</body>
+</html>
+        

@@ -1,88 +1,219 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nettbutikk</title>
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
+    <link href="ikoner/css/brands.css" rel="stylesheet" />
+    <link href="ikoner/css/solid.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    <title>Nettbutikk / Forside</title>
 </head>
 <body>
-    <header>
-        <h1>Logo</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Hjem</a></li>
+    <div id="grid-container">
+        <header id="global-header">
+            <nav class="flex-space-b">
+                <form>
+                    <label>Søk</label>
+                    <input type="search" placeholder="Søk her" id="search">
+                    <input type="submit" value="" class="fa-solid fa-magnifying-glass">
+                </form>
+                <img src="img/nike-logo.png" alt="Nettsted logo" id="main-logo">
+                <ul class="flex-menu" id="menu">
+                    <li><a href="#">Hjem</a></li>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a class="fa-regular fa-user" href="#"></a></li>
+                    <li><a class="fa-regular fa-heart" href="#"></a></li>
+                    <li><a class="fa-solid fa-cart-shopping" href="#"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="banner">
+                <div>
+                    <h2>Våre beste deals</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ligula eu consectetur condimentum. Vestibulum id orci a nulla bibendum scelerisque. 
+                    </p>
+                    <a href="#" class="btn">Få en prøve pakke i dag</a>
+                </div>
+                </section>
+            <h2 id="popular-products">Våre mest populære produkter</h2>
+            <p>Oppdag det beste av det beste</p>
+            <section id="buttons">
+                <a href="#" class="btn">New product</a>
+                <a href="#" class="btn">Special price</a>
+                <a href="#" class="btn">Best sellers</a>
+            </section>
+            <section class="flex-space-b">
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/dunk-low-shoes.png">
+                        <img src="img/dunk-low-shoes.png" alt="Dunk low sko">
+                    </picture>
+                    <b>Dunk low</b>
+                    <p>Kr 1290</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/dunk-low-shoes.png">
+                        <img src="img/dunk-low-shoes.png" alt="Dunk low sko">
+                    </picture>
+                    <b>Dunk low</b>
+                    <p>Kr 1290</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/dunk-low-shoes.png">
+                        <img src="img/dunk-low-shoes.png" alt="Dunk low sko">
+                    </picture>
+                    <b>Dunk low</b>
+                    <p>Kr 1290</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/dunk-low-shoes.png">
+                        <img src="img/dunk-low-shoes.png" alt="Dunk low sko">
+                    </picture>
+                    <b>Dunk low</b>
+                    <p>Kr 1290</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/dunk-low-shoes.png">
+                        <img src="img/dunk-low-shoes.png" alt="Dunk low sko">
+                    </picture>
+                    <b>Dunk low</b>
+                    <p>Kr 1290</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/dunk-low-shoes.png">
+                        <img src="img/dunk-low-shoes.png" alt="Dunk low sko">
+                    </picture>
+                    <b>Dunk low</b>
+                    <p>Kr 1290</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/dunk-low-shoes.png">
+                        <img src="img/dunk-low-shoes.png" alt="Dunk low sko">
+                    </picture>
+                    <b>Dunk low</b>
+                    <p>Kr 1290</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/dunk-low-shoes.png">
+                        <img src="img/dunk-low-shoes.png" alt="Dunk low sko">
+                    </picture>
+                    <b>Dunk low</b>
+                    <p>Kr 1290</p>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/dunk-low-shoes.png">
+                        <img src="img/dunk-low-shoes.png" alt="Dunk low sko">
+                    </picture>
+                    <b>Dunk low</b>
+                    <p>Kr 1290</p>
+                </article>
+            </section>
+            <h2 id="kategorier">Våre mest populære kategorier</h2>
+            <p>Oppdag det beste av det beste</p>
+            <section class="flex-space-c">
+                <article class="category-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/kategori-fresh-kicks.png">
+                        <img src="img/kategori-fresh-kicks.png" alt="fresh kicks">
+                    </picture>
+                    <b>Fresh kicks</b>
+                </article>
+                <article class="category-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/kategori-winter-wear.jpg">
+                        <img src="img/kategori-winter-wear.jpg" alt="winter wear">
+                    </picture>
+                    <b>Winter wear</b>
+                </article>
+                <article class="category-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/kategori-gym-wear.png">
+                        <img src="img/kategori-gym-wear.png" alt="gym wear">
+                    </picture>
+                    <b>Gym wear</b>
+                </article>
+                <article class="category-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/kategori-tech-fleece.png">
+                        <img src="img/kategori-tech-fleece.png" alt="tech fleece">
+                    </picture>
+                    <b>Tech fleece</b>
+                </article>
+                <article class="category-card">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/kategori-head-to-toe-looks.png">
+                        <img src="img/kategori-head-to-toe-looks.png" alt="head to toe looks">
+                    </picture>
+                    <b>Head to toe looks</b>
+                </article>
+            </section>
+            <h3>Anmeldelser</h3>
+            <section id="flex-space-d">
+                <article class="anmeldelse">
+                    <!-- Image by <a href="https://pixabay.com/users/wanderercreative-855399/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=973460">Stephanie Edwards</a>
+                    from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=973460">Pixabay</a> -->
+                    <img src="img/user-icon.png" alt="profilbilde">
+                    <b>John doe</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ligula eu consectetur condimentum. Vestibulum id orci a nulla bibendum scelerisque.</p>
+                </article>
+                <article class="anmeldelse">
+                    <img src="img/user-icon.png" alt="profilbilde">
+                    <b>John doe</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ligula eu consectetur condimentum. Vestibulum id orci a nulla bibendum scelerisque.</p>
+                </article>
+                <article class="anmeldelse">
+                    <img src="img/user-icon.png" alt="profilbilde">
+                    <b>John doe</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ligula eu consectetur condimentum. Vestibulum id orci a nulla bibendum scelerisque.</p>
+                </article>
+                <article class="anmeldelse">
+                    <img src="img/user-icon.png" alt="profilbilde">
+                    <b>John doe</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ligula eu consectetur condimentum. Vestibulum id orci a nulla bibendum scelerisque.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <img src="img/nike-logo.png" alt="Nettsted logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h6>KONTAKT</h6>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Adresse: B R A Veien 4, 1757 Halden</p>
+            <i class="fa-solid fa-phone"></i>
+            <p>Telefon: 69 60 80 00</p>
+            <i class="fa-solid fa-envelope"></i>
+            <p>E-post: halden@hiof.no</p>
+            <i class="fa-solid fa-clock"></i>
+            <p>Åpningstider: Stenger 15:00</p>
+            <h6>SNARVEIER</h6>
+            <ul class="flex-menu">
                 <li><a href="#">Produkter</a></li>
                 <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Kontakt oss</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section>
-        <h2>Elit harum quidem rerum facilis est et expedita distinctio.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, distinctio.</p>
-        <a href="#">Se flere produkter</a>
-    </section>
-
-    <section>
-        <h2>Våre mest populære produkter</h2>
-        <article>
-            <img src="https://picsum.photos/200" alt="Produkt 1">
-            <p>Produktnavn</p>
-            <p>kr 999</p>
-        </article>
-        <article>
-            <img src="https://picsum.photos/200" alt="Produkt 2">
-            <p>Produktnavn</p>
-            <p>kr 999</p>
-        </article>
-        <article>
-            <img src="https://picsum.photos/200" alt="Produkt 3">
-            <p>Produktnavn</p>
-            <p>kr 999</p>
-        </article>
-        <article>
-            <img src="https://picsum.photos/200" alt="Produkt 4">
-            <p>Produktnavn</p>
-            <p>kr 999</p>
-        </article>
-    </section>
-
-    <section>
-        <h2>Våre mest populære kategorier</h2>
-        <article>Kategori 1</article>
-        <article>Kategori 2</article>
-        <article>Kategori 3</article>
-        <article>Kategori 4</article>
-    </section>
-
-    <section>
-        <h2>Anmeldelser</h2>
-        <article>
-            <img src="https://picsum.photos/200" alt="Profilbilde">
-            <h3>Navn</h3>
-            <p>Her er anmeldelsen fra kunden...</p>
-        </article>
-        <article>
-            <img src="https://picsum.photos/200" alt="Profilbilde">
-            <h3>Navn</h3>
-            <p>Her er anmeldelsen fra kunden...</p>
-        </article>
-        <article>
-            <img src="https://picsum.photos/200" alt="Profilbilde">
-            <h3>Navn</h3>
-            <p>Her er anmeldelsen fra kunden...</p>
-        </article>
-    </section>
-
-    <footer>
-        <h2>Logo</h2>
-        <address>
-            <p>Adresse: Gate 123, By</p>
-            <p>Telefon: 123 45 678</p>
-            <p>E-post: kontakt@eksempel.no</p>
-        </address>
-    </footer>
+            <h6>SOSIALE MEDIER</h6>
+            <i class="fa-brands fa-instagram"></i>
+            <p>Instagram</p>
+            <i class="fa-brands fa-facebook"></i>
+            <p>Facebook</p>
+            <i class="fa-brands fa-linkedin"></i>
+            <p>LinkedIn</p>
+            <i class="fa-brands fa-pinterest"></i>
+            <p>Pinterest</p>
+        </footer>
+    </div>
 </body>
 </html>
